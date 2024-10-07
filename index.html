@@ -1,44 +1,42 @@
-import React from 'react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Departments</title>
+</head>
+<body style="background-color: white; color: darkblue; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
 
-const App = () => {
-    const departments = [
-        {
-            name: 'Computer Science & Engineering (CSE)',
-            description: 'The Computer Science and Engineering department focuses on developing the skills necessary for software development, system design, and computer technology.'
-        },
-        {
-            name: 'Information Technology (IT)',
-            description: 'The Information Technology department emphasizes the use of technology in business and provides a strong foundation in computer applications and networking.'
-        },
-        {
-            name: 'Electronics and Communication Engineering (ECE)',
-            description: 'The Electronics and Communication Engineering department offers insights into electronic devices, communication systems, and signal processing.'
-        },
-        {
-            name: 'Electrical and Electronics Engineering (EEE)',
-            description: 'The Electrical and Electronics Engineering department prepares students to work with electrical systems, electronics, and power generation.'
-        }
-    ];
+    <header style="text-align: center; margin-bottom: 20px;">
+        <h1 style="color: darkblue;">Welcome to Our College</h1>
+        <h2 style="color: darkblue;">Department Information</h2>
+    </header>
 
-    return (
-        <div style={{ padding: '20px', backgroundColor: 'white', color: 'darkblue', fontFamily: 'Arial, sans-serif' }}>
-            <header style={{ textAlign: 'center', marginBottom: '20px' }}>
-                <h1>Welcome to Our College</h1>
-                <h2>Department Information</h2>
-            </header>
-            <main>
-                {departments.map((dept, index) => (
-                    <section key={index} style={{ marginBottom: '20px' }}>
-                        <h3>{dept.name}</h3>
-                        <p>{dept.description}</p>
-                    </section>
-                ))}
-            </main>
-            <footer style={{ textAlign: 'center', marginTop: '20px' }}>
-                <p>&copy; 2024 Our College. All rights reserved.</p>
-            </footer>
-        </div>
-    );
-};
+    <main>
+        <section style="margin-bottom: 20px;">
+            <h3 style="color: darkblue;">Computer Science & Engineering (CSE)</h3>
+            <p>The Computer Science and Engineering department focuses on developing the skills necessary for software development, system design, and computer technology.</p>
+        </section>
 
-export default App;
+        <section style="margin-bottom: 20px;">
+            <h3 style="color: darkblue;">Information Technology (IT)</h3>
+            <p>The Information Technology department emphasizes the use of technology in business and provides a strong foundation in computer applications and networking.</p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h3 style="color: darkblue;">Electronics and Communication Engineering (ECE)</h3>
+            <p>The Electronics and Communication Engineering department offers insights into electronic devices, communication systems, and signal processing.</p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h3 style="color: darkblue;">Electrical and Electronics Engineering (EEE)</h3>
+            <p>The Electrical and Electronics Engineering department prepares students to work with electrical systems, electronics, and power generation.</p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px;">
+        <p style="color: darkblue;">&copy; 2024 Our College. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
