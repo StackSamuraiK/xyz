@@ -1,0 +1,44 @@
+import React from 'react';
+
+const App = () => {
+    const departments = [
+        {
+            name: 'Computer Science & Engineering (CSE)',
+            description: 'The Computer Science and Engineering department focuses on developing the skills necessary for software development, system design, and computer technology.'
+        },
+        {
+            name: 'Information Technology (IT)',
+            description: 'The Information Technology department emphasizes the use of technology in business and provides a strong foundation in computer applications and networking.'
+        },
+        {
+            name: 'Electronics and Communication Engineering (ECE)',
+            description: 'The Electronics and Communication Engineering department offers insights into electronic devices, communication systems, and signal processing.'
+        },
+        {
+            name: 'Electrical and Electronics Engineering (EEE)',
+            description: 'The Electrical and Electronics Engineering department prepares students to work with electrical systems, electronics, and power generation.'
+        }
+    ];
+
+    return (
+        <div style={{ padding: '20px', backgroundColor: 'white', color: 'darkblue', fontFamily: 'Arial, sans-serif' }}>
+            <header style={{ textAlign: 'center', marginBottom: '20px' }}>
+                <h1>Welcome to Our College</h1>
+                <h2>Department Information</h2>
+            </header>
+            <main>
+                {departments.map((dept, index) => (
+                    <section key={index} style={{ marginBottom: '20px' }}>
+                        <h3>{dept.name}</h3>
+                        <p>{dept.description}</p>
+                    </section>
+                ))}
+            </main>
+            <footer style={{ textAlign: 'center', marginTop: '20px' }}>
+                <p>&copy; 2024 Our College. All rights reserved.</p>
+            </footer>
+        </div>
+    );
+};
+
+export default App;
